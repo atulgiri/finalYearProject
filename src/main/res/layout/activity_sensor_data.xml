@@ -6,8 +6,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/pic2"
         android:gravity="center_horizontal"
         tools:context=".sensorDataActivity">
+
         <TextView
                 android:layout_marginTop="100dp"
                 android:layout_width="wrap_content"
@@ -18,23 +20,69 @@
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="100dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-            <TextView
+                android:background="#77d1b577"
+                android:orientation="vertical">
+            <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Current Moisture : "/>
-            <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Current Moisture : "/>
+                <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:id="@+id/iMoisEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textSize="20dp"
-                    android:id="@+id/iMoisEditText"/>
-        </LinearLayout>
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Current pH Value : "/>
+                <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/ipHEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Yield Predicted : "/>
+                <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/iYieldTextView"/>
+            </LinearLayout>
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,66 +94,26 @@
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Current pH Value : "/>
+                    android:text="Recommended best Crop : "/>
             <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
                     android:fontFamily="sans-serif-medium"
-                    android:id="@+id/ipHEditText"/>
+                    android:id="@+id/iCropTextView"/>
         </LinearLayout>
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="45dp"
                 android:layout_marginTop="50dp"
-                android:gravity="center">
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Yield Predicted : "/>
-            <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:id="@+id/iYieldTextView"/>
+                android:text="Edit Values"
+                android:onClick="onEditClicked"/>
+        <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Back"
+                android:onClick="onBackClicked"/>
         </LinearLayout>
-    <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:gravity="center">
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Recommended best Crop : "/>
-        <TextView
-                android:layout_marginLeft="20dp"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:fontFamily="sans-serif-medium"
-                android:id="@+id/iCropTextView"/>
-    </LinearLayout>
-    <Button
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="50dp"
-            android:text="Back"
-            android:onClick="onBackClicked"/>
-    <Button
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:text="Edit Values"
-            android:onClick="onEditClicked"/>
-
 </LinearLayout>

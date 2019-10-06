@@ -80,6 +80,7 @@ class sensorDataActivity : AppCompatActivity()
     }
     fun onEditClicked(view: View)
     {
-
+        val intent = Intent(this,EditValuesActivity::class.java)
+        startActivity(intent)
     }
 }

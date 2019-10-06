@@ -5,38 +5,57 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
+        android:background="@drawable/pic1"
         tools:context=".MainActivity">
-
-    <EditText
-            android:width="200dp"
+    <TextView
+            android:layout_marginTop="120dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/iEmailEditText"
-            android:hint="Email"/>
-    <EditText
-            android:width="200dp"
-            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Login to experience"/>
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:id="@+id/iPasswordEditText"
-            android:hint="Password"/>
-    <Button
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Sign In"
-            android:onClick="onSignInClicked"/>
-    <Button
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Sign Up"
-            android:onClick="onSignUpClicked"/>
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal">
+        <EditText
+                android:width="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/iEmailEditText"
+                android:hint="Email"/>
+        <EditText
+                android:width="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/iPasswordEditText"
+                android:hint="Password"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:orientation="horizontal">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="80dp"
+                    android:text="Sign In"
+                    android:onClick="onSignInClicked"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Sign Up"
+                    android:onClick="onSignUpClicked"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

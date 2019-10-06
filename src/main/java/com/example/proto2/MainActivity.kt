@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+//        android:background="#aa74a68a"
         mEmailEditText = findViewById(R.id.iEmailEditText)
         mPassEditText = findViewById(R.id.iPasswordEditText)
     }
