@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="100dp"
-                android:background="#77d1b577"
+                android:background="@drawable/layout_bg"
                 android:orientation="vertical">
             <LinearLayout
                     android:layout_width="wrap_content"
@@ -108,12 +108,16 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="50dp"
                 android:text="Edit Values"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
                 android:onClick="onEditClicked"/>
         <Button
                 android:layout_width="75dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
                 android:text="Back"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
                 android:onClick="onBackClicked"/>
         </LinearLayout>
 </LinearLayout>

@@ -35,5 +35,7 @@ class EditValuesActivity : AppCompatActivity()
         val pHRef = FirebaseDatabase.getInstance().getReference("Data/pHValue")
         pHRef.setValue(pHVal)
         Toast.makeText(this,"Values updated",Toast.LENGTH_SHORT).show()
+        val intent = Intent(this,sensorDataActivity::class.java)
+        startActivity(intent)
     }
 }

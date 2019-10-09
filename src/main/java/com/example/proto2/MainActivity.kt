@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity()
         {task ->
             if(task.isSuccessful)
             {
+                Toast.makeText(this,"Welcome Back "+mEmailEditText?.text,Toast.LENGTH_SHORT).show()
                 login()
             }
             else

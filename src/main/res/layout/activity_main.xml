@@ -17,10 +17,11 @@
             android:fontFamily="sans-serif-light"
             android:text="Login to experience"/>
     <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="270dp"
             android:orientation="vertical"
             android:layout_marginTop="70dp"
+            android:background="@drawable/layoutbg1"
             android:gravity="center_horizontal">
         <EditText
                 android:width="250dp"
@@ -40,20 +41,24 @@
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="100dp"
                 android:orientation="horizontal">
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginRight="80dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:layout_marginRight="50dp"
                     android:text="Sign In"
                     android:onClick="onSignInClicked"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/darker_gray"
                     android:text="Sign Up"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
                     android:onClick="onSignUpClicked"/>
         </LinearLayout>
     </LinearLayout>
